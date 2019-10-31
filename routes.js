@@ -6,20 +6,9 @@ const multer = require("multer");
 
 const upload = multer({
     dest: "public/images"
-    // you might also want to set some limits: https://github.com/expressjs/multer#limits
 });
 
 module.exports = function(app) {
-    var person = require('./controllers/person');
-
-    // router.route('/')
-    //     .get(person.index);
-
-    // router.route('/persons')
-    //     .get(person.persons);
-
-    // app.use('/api/v1/person');
-    // app.route('/api/v1/person')
     app.post('/auth/signup', personController.registerPerson);
     app.post('/auth/login', personController.login);
     app.get('/api/v1/persons', auth.authorization, personController.getAllPersons);

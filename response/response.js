@@ -23,7 +23,6 @@ exports.deleted = function(values, res, code) {
 exports.loggedIn = function(values, res, code) {
   var data = {
       'status': 'OK',
-      'message': 'Logged In Successfully',
       'result': {
                   'access_token': values
                 }
