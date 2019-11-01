@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "food_be_node",
-    "host": "127.0.0.1",
+    "username": "db_username",
+    "password": "db_password",
+    "database": "db_name",
+    "host": "db_host",
     "dialect": "mysql",
     "operatorsAliases": false
   },
