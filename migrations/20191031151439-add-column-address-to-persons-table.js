@@ -11,7 +11,7 @@ module.exports = {
     */
     return queryInterface.addColumn(
       'persons',
-      'password',
+      'address',
       Sequelize.STRING
     );
   },
@@ -26,7 +26,8 @@ module.exports = {
     */
     return queryInterface.removeColumn(
       'persons',
-      'password'
+      'address',
+      Sequelize.STRING
     );
   }
 };

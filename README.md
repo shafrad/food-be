@@ -1,6 +1,6 @@
-# RESTFul API NODEJS BACKEND
+# RESTFul API for mini food commerce apps NODEJS BACKEND
 
-Node.js Backend for RESTFul API services (https://testbinar.docs.apiary.io)
+Node.js Backend for RESTFul API services
 
 ## Requirement
 - Expressjs (https://expressjs.com/)
@@ -9,12 +9,12 @@ Node.js Backend for RESTFul API services (https://testbinar.docs.apiary.io)
 ## Installations
 Clone Project
 ```
-$ git clone https://github.com/shafrad/be-nodejs.git
+$ git clone https://github.com/shafrad/food-be.git
 ```
 Install Dependecies
 ```
 # Clone Project
-$ git clone https://github.com/shafrad/be-nodejs.git
+$ git clone https://github.com/shafrad/food-be.git
 
 # Install Dependecies
 $ npm install
@@ -33,8 +33,6 @@ Edit the config.json in the config folder
 - Local
 ```
 $ sequelize db:migrate
-
-$ sql-migrate up
 ```
 
 - Staging

@@ -1,8 +1,8 @@
 'use strict';
 
 const bcrypt = require("bcrypt");
-const response = require('../response/response');
-const Person = require('../models').Person;
+const response = require('../responses/response');
+const Person = require('../models').persons;
 const config = require('../config/credential');
 const jwt = require('jsonwebtoken')
 

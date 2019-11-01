@@ -1,9 +1,6 @@
-const response = require('../response/response');
-const Person = require('../models').Person;
 const config = require('../config/credential');
 const jwt = require('jsonwebtoken')
 let salt = config.security;
-console.log(salt);
 
 module.exports = {
     
@@ -18,16 +15,15 @@ module.exports = {
         
         if(flag){
         jwt.verify(token[1], salt, function (err, decoded) {
-            // body...
             if (err) {
-                res.status(401).json("Authentication failed");
+                res.status(401).json({ 'message': 'Authentication failed' });
             } else {
                 req.currUser = decoded;
                 return next();
             }
         });
         } else {
-            res.status(401).json("Authentication failed");
+            res.status(401).json({ 'message': 'Authentication failed' });
         }    
     }
 }
